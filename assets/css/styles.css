@@ -123,12 +123,12 @@ body{
     height: 1px;
     background: #dddddd;
 }
-.compétences{
+.competences{
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
-.compétences ul{
+.competences ul{
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -185,17 +185,17 @@ body{
 .interet li::marker{
     color: #17ABB3;
 }
-.gril-css{
+.gril__competence{
     position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
-.gril-css2 li{
+.gril__competence--right li{
     font-family: 'Lato', sans-serif;
     font-size: 0.9rem;
     font-weight: 400;
 }
-.gril-competence{
+.competence__cours{
     position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -217,49 +217,53 @@ body{
     object-fit: cover;
     filter: brightness(0) saturate(100%) invert(52%) sepia(41%) saturate(496%) hue-rotate(139deg) brightness(94%) contrast(88%);
 }
-.main-principal{
+.main__principal{
     background: #FFFFFF;
     width: 70%;
     height: 40.0rem;
     padding: 3rem;
     display: flex;
     flex-direction: column;
-    align-content: center;
+    justify-content: center;
+    align-content: start;
     gap: 23px;
     margin-left: 348px;
     margin-top: -640px;
 }
-.main-profil{
+.main__principal--profil{
     display: flex;
     flex-direction: column;
     gap: 9px;
 }
-.main-profil h2{
+.main__principal--profil h2{
     font-family: 'Lato', sans-serif;
     font-size: 1.3rem;
     font-weight: 400;
     color: #17ABB3;
 }
-.main-profil p{
+.main__principal--container p:nth-child(1){
+    padding: 2px;
+}
+.main__principal--container{
+    text-align: justify;
+    margin: 0;
     text-indent: 19px;
-    padding: 0.4rem;
-    text-indent: 19px;
     font-family: 'Raleway', sans-serif;
     font-size: 0.9rem;
     font-weight: 400;
 }
-.main-items-formations{
+.main__formations{
     display: flex;
     flex-direction: column;
     gap: 9px;
 }
-.main-items-formations h2{
+.main__formations h2{
     font-family: 'Lato', sans-serif;
     font-size: 1.3rem;
     font-weight: 400;
     color: #17ABB3;
 }
-.main-formations{
+.main__formations--items{
     position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -273,40 +277,40 @@ body{
     padding-right: 0.6rem;
     margin-left: -12px;
 }
-.main-formations:hover{
+.main__formations--items:hover{
     background-color: #eee;
     border-left: 5px solid #17ABB3;
     transform: translateX(15px);
 }
-.main-DWWM{
+.main__formations--dwwm{
     font-family: 'Lato', sans-serif;
     font-size: 0.9rem;
     font-weight: 700;
 }
-.main-formation{
+.main__formations--centre{
     font-family: 'Lato', sans-serif;
     font-size: 0.8rem;
     font-weight: 400;
     font-style: italic;
 }
-.main-annee-formation{
+.main__formations--annee{
     font-family: 'Raleway', sans-serif;
     font-size: 0.9rem;
     font-weight: 400;
     color: #17ABB3;
 }
-.main-items-stages{
+.main__stages{
     display: flex;
     flex-direction: column;
     gap: 9px;
 }
-.main-items-stages h2{
+.main__stages h2{
     font-family: 'Lato', sans-serif;
     font-size: 1.3rem;
     font-weight: 400;
     color: #17ABB3;
 }
-.main-stages{
+.main__stages--items{
     position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -320,46 +324,46 @@ body{
     padding-right: 0.6rem;
     margin-left: -12px;
 }
-.main-stages:hover{
+.main__stages--items:hover{
     background-color: #eee;
     border-left: 5px solid #17ABB3;
     transform: translateX(15px);
 }
-.main-annee-stages{
+.main__stages--annee{
     font-family: 'Raleway', sans-serif;
     font-size: 0.9rem;
     font-weight: 400;
     color: #17ABB3;
 }
-.main-metier{
+.main__stages--metier{
     font-family: 'Lato', sans-serif;
     font-size: 0.9rem;
     font-weight: 700;
 }
-.main-entreprise{
+.main__stages--entreprise{
     font-family: 'Lato', sans-serif;
     font-size: 0.8rem;
     font-weight: 400;
     font-style: italic;
 }
-.main-annee-stages{
+.main__stages--annee{
     font-family: 'Raleway', sans-serif;
     font-size: 0.9rem;
     font-weight: 400;
     color: #17ABB3;
 }
-.main-items-experiences{
+.main__experiences{
     display: flex;
     flex-direction: column;
     gap: 9px;
 }
-.main-items-experiences h2{
+.main__experiences h2{
     font-family: 'Lato', sans-serif;
     font-size: 1.3rem;
     font-weight: 400;
     color: #17ABB3;
 }
-.main-experiences{
+.main__experiences--items{
     position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -373,23 +377,23 @@ body{
     padding-right: 0.6rem;
     margin-left: -12px;
 }
-.main-experiences:hover{
+.main__experiences--items:hover{
     background-color: #eee;
     border-left: 5px solid #17ABB3;
     transform: translateX(15px);
 }
-.main-activite{
+.main__experiences--activite{
     font-family: 'Lato', sans-serif;
     font-size: 0.9rem;
     font-weight: 700;
 }
-.main-structure{
+.main__experiences--structure{
     font-family: 'Lato', sans-serif;
     font-size: 0.8rem;
     font-weight: 400;
     font-style: italic;
 }
-.main-annee-activite{
+.main__experiences--annee{
     font-family: 'Raleway', sans-serif;
     font-size: 0.9rem;
     font-weight: 400;
@@ -404,14 +408,14 @@ body{
     justify-content: center;
     align-items: center;
 }
-.social-social{
+.social__social{
     position: relative;
     display: grid;
     grid-template-rows: 1fr 1fr;
     gap: 9px;
     margin-bottom: -25px;
 }
-.social-date p{
+.social__social--date{
     font-family: 'Raleway', sans-serif;
     font-size: 0.8rem;
     font-weight: 400;
@@ -419,13 +423,13 @@ body{
     color: #FFFFFF;
     margin-left: 50px;
 }
-.social-item{
+.social__social--icone{
     font-size: 22px;
     color: #FFFFFF;
     cursor: pointer;
     transition: opacity 0.3s ease;
     margin-left: 110px;
 }
-.social-item:hover{
+.social__social--icone:hover{
     opacity: 0.7;
 }

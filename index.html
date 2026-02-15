@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mon CV</title>
-    <meta name="description" content="CV Développeur Web et Web Mobile">
+    <meta property="og:title" content="CV - Développeur Web">
+    <meta property="og:description" content="CV Développeur Web et Web Mobile">
     <link rel="icon" href="./assets/image/cv.ico">
     <link rel="stylesheet" href="./assets/css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
 <body>
     <div class="cv">
@@ -24,11 +25,11 @@
 
                 <address class="contact">
                 <div class="left">
-                    <a href="mailto:email@gmail.com"><i class="fa-solid fa-envelope"></i> Mail</a>
-                    <a href="https://maps.google.com" target="_blank"><i class="fa-solid fa-location-dot"></i> Paris</a>
+                    <a href="mailto:email@gmail.com"><i class="fa-solid fa-envelope"></i> email@gmail.com</a>
+                    <a href="https://maps.google.com" target="_blank"><i class="fa-solid fa-location-dot"></i> Paris, France</a>
                 </div>
                 <div class="right">
-                    <a href="tel:0606060606"><i class="fa-solid fa-phone"></i> Téléphone</a>
+                    <a href="tel:0606060606" target="_blank" rel="noopener"><i class="fa-solid fa-phone"></i> 06 06 06 06 06</a>
                 </div>
                 </address>
             </div>
@@ -37,10 +38,10 @@
         <main class="content">
 
             <aside class="sidebar">
-                <section class="compétences">
+                <section class="competences">
                     <h2>Compétences</h2>
                     <hr class="one">
-                    <div class="gril-competence">
+                    <div class="competence__cours">
                         <ul>
                             <li>HTML</li>
                             <li>CSS</li>
@@ -60,12 +61,12 @@
                 <section class="langues">
                     <h2>Langues</h2>
                     <hr class="one">
-                    <div class="gril-css">
-                        <ul class="gril-css1">
+                    <div class="gril__competence">
+                        <ul class="gril__competence--left">
                             <li>Français</li>
                             <li>Anglais</li>
                         </ul>
-                        <ul class="gril-css2">
+                        <ul class="gril__competence--right">
                             <li>Langue maternelle</li>
                             <li>Professionnel</li>
                         </ul>
@@ -93,74 +94,78 @@
                 </section>
             </aside>
 
-            <section class="main-principal">
-                <section class="main-profil">
+            <div class="main__principal">
+                <section class="main__principal--profil">
                     <h2>Profil</h2>
                     <hr class="one">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed doloribus iste cumque odio! Sed voluptatum quidem cum quam aut voluptatem. consequuntur sunt repellendus porro eaque unde deleniti dicta perferendis magni debitis dolorem atque vitae voluptas. Cum magni doloribus eius tenetur!</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed doloribus iste cumque odio! Sed voluptatum quidem cum quam aut voluptatem. consequuntur sunt repellendus porro eaque unde deleniti dicta perferendis magni debitis dolorem atque vitae voluptas. Cum magni doloribus eius tenetur!</p>
+                    <div class="main__principal--container">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed doloribus iste cumque odio! Sed voluptatum quidem cum quam aut voluptatem. consequuntur sunt repellendus porro eaque unde deleniti dicta perferendis magni debitis dolorem atque vitae voluptas. Cum magni doloribus eius tenetur!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed doloribus iste cumque odio! Sed voluptatum quidem cum quam aut voluptatem. consequuntur sunt repellendus porro eaque unde deleniti dicta perferendis magni debitis dolorem atque vitae voluptas. Cum magni doloribus eius tenetur!</p>
+                    </div>
                 </section>
-                <section class="main-items-formations">
+                <section class="main__formations">
                     <h2>Formations</h2>
                     <hr class="one">
-                    <section class="main-formations">
+                    <div class="main__formations--items">
                         <div>
-                            <p class="main-DWWM">Titre Professionnel DWWM</p>
-                            <p class="main-formation">Centre Européen de Formation</p>
+                            <p class="main__formations--dwwm">Titre Professionnel DWWM</p>
+                            <p class="main__formations--centre">Centre Européen de Formation</p>
                         </div>
                         <div>
-                            <p class="main-annee-formation">
-                                <time datetime="2023-2024">2023/2024</time>
+                            <p class="main__formations--annee">
+                                <time datetime="2023">2023/2024</time>
                             </p>
                         </div>
-                    </section>
+                    </div>
                 </section>
-                <section class="main-items-stages">
+                <section class="main__stages">
                     <h2>Stages</h2>
                     <hr class="one">
-                    <section class="main-stages">
+                    <div class="main__stages--items">
                         <div>
-                            <p class="main-metier">Gestionnaire de paye</p>
-                            <p class="main-entreprise">Société Truc & Machin</p>
+                            <p class="main__stages--metier">Gestionnaire de paye</p>
+                            <p class="main__stages--entreprise">Société Truc & Machin</p>
                         </div>
                         <div>
-                            <p class="main-annee-stages">
+                            <p class="main__stages--annee">
                                 <time datetime="2022">Mars 2022 - Avril 2022</time>
                             </p>
                         </div>
-                    </section>
+                    </div>
                 </section>
-                <section class="main-items-experiences">
+                <section class="main__experiences">
                     <h2>Expérience professionnelle</h2>
                     <hr class="one">
-                    <section class="main-experiences">
+                    <div class="main__experiences--items">
                         <div>
-                            <p class="main-activite">Chauffeur - Livreur</p>
-                            <p class="main-structure">Transport Nénès & Fils</p>
+                            <p class="main__experiences--activite">Chauffeur - Livreur</p>
+                            <p class="main__experiences--structure">Transport Nénès & Fils</p>
                         </div>
                         <div>
-                            <p class="main-annee-activite">
+                            <p class="main__experiences--annee">
                                 <time datetime="2021">Septembre 2021 - Décembre 2021</time>
                             </p>
                         </div>
-                    </section>
+                    </div>
                 </section>
-            </section>
+            </div>
 
         </main>
         <footer>
-            <section class="footer">
-                <div class="social-social">
-                    <div class="social-item">
-                        <a href="https://github.com/ar56bn108-cmd/premier-depot" target="_blank">
+            <div class="footer">
+                <div class="social__social">
+                    <div class="social__social--icone">
+                        <a href="https://github.com/ar56bn108-cmd/premier-depot" target="_blank" aria-label="Voir mon profil GitHub">
                             <i class="fa-brands fa-github"></i>
                         </a>
                     </div>
-                    <div class="social-date">
-                        <p>Mis à jour le : 13/02/2026</p>
+                    <div class="social__social">
+                        <p class="social__social--date">
+                            Mis à jour le : <time datetime="2026">15/02/2026</time>
+                        </p>
                     </div>
-                </div> 
-            </section>
+                </div>
+            </div>
         </footer>
     </div>
 </body>
