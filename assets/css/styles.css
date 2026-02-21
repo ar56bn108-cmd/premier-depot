@@ -109,19 +109,15 @@ body{
     margin-bottom: 20px;
 }
 .sidebar ul{
-    list-style: square;
-    margin-left: 20px;
+    list-style: none;
 }
 .sidebar h2{
     font-family: 'Lato', sans-serif;
     font-size: 1.3rem;
     font-weight: 400;
     color: #17ABB3;
-}
-.one{
-    border: none;
-    height: 1px;
-    background: #dddddd;
+    border-bottom: 2px solid #dddddd;
+    padding-bottom: 10px;
 }
 .competences{
     display: flex;
@@ -166,8 +162,18 @@ body{
     font-size: 0.9rem;
     font-weight: 400;
 }
-.qualites li::marker{
-    color: #17ABB3;
+.qualites li{
+    position: relative;
+    padding-left: 16px;
+}
+.qualites li::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 6px;
+    width: 6px;
+    height: 6px;
+    background-color: #17ABB3;
 }
 .interet{
     display: flex;
@@ -182,28 +188,50 @@ body{
     font-size: 0.9rem;
     font-weight: 400;
 }
-.interet li::marker{
-    color: #17ABB3;
-}
-.gril__competence{
+.interet li{
     position: relative;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    padding-left: 16px;
 }
-.gril__competence--right li{
+.interet li::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 6px;
+    width: 6px;
+    height: 6px;
+    background-color: #17ABB3;
+}
+.langues__competence ul{
+    list-style: none;
+    padding: 0;
+}
+.langues__competence li{
+    display: flex;
+    gap: 55px;
+}
+.langues__competence span{
     font-family: 'Lato', sans-serif;
     font-size: 0.9rem;
     font-weight: 400;
+    text-indent: 32px;
 }
-.competence__cours{
-    position: relative;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+.langues__competence li:nth-child(2) span{
+    margin-left: 35px;
 }
-.etoiles{
+.competence__cours ul{
+    list-style: none;
+    padding: 0; 
+}
+.competence__cours li{
+    display: flex;
+    gap: 35px;
+    align-items: center;
+    margin-bottom: 8px;
+}
+.competence__etoiles{
     display: flex;
     gap: 2px;
-    margin-left: 42px;
+    margin-left: 83px;
 }
 .photo2{
     width: 16px;
@@ -224,11 +252,12 @@ body{
     padding: 3rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-content: start;
     gap: 23px;
     margin-left: 348px;
-    margin-top: -640px;
+    margin-top: -593px;
+    margin-bottom: -47px;
 }
 .main__principal--profil{
     display: flex;
@@ -240,6 +269,8 @@ body{
     font-size: 1.3rem;
     font-weight: 400;
     color: #17ABB3;
+    border-bottom: 2px solid #dddddd;
+    padding-bottom: 10px;
 }
 .main__principal--container p:nth-child(1){
     padding: 2px;
@@ -262,6 +293,8 @@ body{
     font-size: 1.3rem;
     font-weight: 400;
     color: #17ABB3;
+    border-bottom: 2px solid #dddddd;
+    padding-bottom: 10px;
 }
 .main__formations--items{
     position: relative;
@@ -309,6 +342,8 @@ body{
     font-size: 1.3rem;
     font-weight: 400;
     color: #17ABB3;
+    border-bottom: 2px solid #dddddd;
+    padding-bottom: 10px;
 }
 .main__stages--items{
     position: relative;
@@ -362,6 +397,8 @@ body{
     font-size: 1.3rem;
     font-weight: 400;
     color: #17ABB3;
+    border-bottom: 2px solid #dddddd;
+    padding-bottom: 10px;
 }
 .main__experiences--items{
     position: relative;
@@ -432,4 +469,31 @@ body{
 }
 .social__social--icone:hover{
     opacity: 0.7;
+}
+.main__formations--annee:first-of-type::after{
+    content: " / ";
+    color: #17ABB3;
+}
+.main__stages--annee:first-of-type::after{
+    content: " - ";
+    color: #17ABB3;
+}
+.main__experiences--annee:first-of-type::after{
+    content: " - ";
+    color: #17ABB3;
+}
+.competence__etoiles1{
+    display: flex;
+    gap: 2px;
+    margin-left: 97.8px;
+}
+.competence__etoiles2{
+    display: flex;
+    gap: 2px;
+    margin-left: 57.8px;
+}
+.competence__etoiles3{
+    display: flex;
+    gap: 2px;
+    margin-left: 94.0px;
 }
